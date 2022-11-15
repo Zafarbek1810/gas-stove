@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import { RightNavWrapper } from "./RightNav.style";
 import MyLink from "../../../Common/MyLink";
+import MyButton from "../../../Common/MyButton";
 
 const RightNav = ({ open }) => {
   const router = useRouter();
@@ -14,29 +15,29 @@ const RightNav = ({ open }) => {
           </MyLink>
         </li>
         <li>
-          <MyLink to="/news" className={router.pathname == "/news" ? "active" : "link"}>
+          <MyLink to="/" className={router.pathname == "/news" ? "active" : "link"}>
             About Us
           </MyLink>
         </li>
         <li>
-          <MyLink to="/news" className={router.pathname == "/news" ? "active" : "link"}>
+          <MyLink to="/" className={router.pathname == "/news" ? "active" : "link"}>
             Categories
           </MyLink>
         </li>
         <li>
-          <MyLink to="/news" className={router.pathname == "/news" ? "active" : "link"}>
+          <MyLink to="/" className={router.pathname == "/news" ? "active" : "link"}>
             Calculation
           </MyLink>
         </li>
         <li>
-          <MyLink to="/news" className={router.pathname == "/news" ? "active" : "link"}>
+          <MyLink to="/" className={router.pathname == "/news" ? "active" : "link"}>
             Contact us
           </MyLink>
         </li>
       </ul>
-      <MyLink to="/" className="btn">
+      <MyButton to="/" className="btn">
         Quick CTA
-      </MyLink>
+      </MyButton>
     </RightNavWrapper>
   );
 };
