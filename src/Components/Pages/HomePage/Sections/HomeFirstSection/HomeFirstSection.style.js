@@ -1,33 +1,51 @@
 import styled from "styled-components";
 
-const HomeFirstWrapper=styled.div`
-  height:calc(100vh - 50px);
-  max-width: 100%;
-  background: url("images/banner.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  .swiperWrap{
-    position: relative;
+const BannerWrappper=styled.div`
+  .swiperWrap {
+
+    .swiper-0, .swiper-2{
+      background: url("/images/banner1.jpeg") no-repeat center center;
+      height: calc(100vh - 50px);
+      max-width: 100%;
+      background-size: cover;
+      position: relative !important;
+
+    }
+    .swiper-1, .swiper-3{
+      background: url("/images/banner2.jpeg") no-repeat center center;
+      height: calc(100vh - 50px);
+      max-width: 100%;
+      background-size: cover;
+      position: relative !important;
+
+    }
   }
-  
-  .text{
+  .controlBtns {
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+  }
+`
+
+const HomeFirstWrapper=styled.div`  
+
+  .text {
     height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    
-    .subtitle{
+
+    .subtitle {
       font-size: 18px;
       color: #069e78;
       font-weight: 400;
       margin-bottom: 15px;
       text-transform: uppercase;
     }
-    
-    .title{
+
+    .title {
       margin: 0 0 24px 0;
       width: 50%;
       font-size: 60px;
@@ -36,8 +54,8 @@ const HomeFirstWrapper=styled.div`
       line-height: 90px;
       text-transform: capitalize;
     }
-    
-    .btn{
+
+    .btn {
       background: #069e78;
       border: none;
       padding: 14px 30px;
@@ -47,20 +65,16 @@ const HomeFirstWrapper=styled.div`
       text-transform: uppercase;
       cursor: pointer;
       border-radius: 10px;
-      
+
       display: flex;
       align-items: center;
     }
   }
+
   
-  .controlBtns{
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
+
 `
 
 export{
-  HomeFirstWrapper
+  HomeFirstWrapper, BannerWrappper
 }
