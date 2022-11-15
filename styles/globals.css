@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -15,10 +15,30 @@ a {
   box-sizing: border-box;
 }
 
+.swiper-pagination-horizontal {
+  display: flex;
+  flex-direction: column;
+  left: 40px !important;
+  top: 40%;
+}
+
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  background: #666 !important ;
+  opacity: 1 !important;
+  margin-bottom: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: blue !important;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
