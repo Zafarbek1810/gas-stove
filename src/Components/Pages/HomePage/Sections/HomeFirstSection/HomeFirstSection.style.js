@@ -1,34 +1,50 @@
 import styled from "styled-components";
 
-const BannerWrappper=styled.div`
+const BannerWrappper = styled.div`
+  height: 100vh;
+
   .swiperWrap {
 
-    .swiper-0, .swiper-2{
+    .swiper-0, .swiper-2 {
       background: url("/images/banner1.jpeg") no-repeat center center;
-      height: calc(100vh - 50px);
+      height: calc(100vh - 73px);
       max-width: 100%;
       background-size: cover;
       position: relative !important;
 
     }
-    .swiper-1, .swiper-3{
+
+    .swiper-1, .swiper-3 {
       background: url("/images/banner2.jpeg") no-repeat center center;
-      height: calc(100vh - 50px);
+      height: calc(100vh - 73px);
       max-width: 100%;
       background-size: cover;
       position: relative !important;
 
     }
   }
+
   .controlBtns {
     position: absolute !important;
     bottom: 0;
     right: 0;
     z-index: 4;
+    padding: 5px;
+    background: #fff;
+
+    button {
+      background: #fff;
+      border: none;
+      cursor: pointer;
+
+      &:first-child {
+        border-right: 1px solid #eee;
+      }
+    }
   }
 `
 
-const HomeFirstWrapper=styled.div`  
+const HomeFirstWrapper = styled.div`
 
   .text {
     height: calc(100vh - 50px);
@@ -71,10 +87,10 @@ const HomeFirstWrapper=styled.div`
     }
   }
 
-  
+
 
 `
 
-export{
+export {
   HomeFirstWrapper, BannerWrappper
 }

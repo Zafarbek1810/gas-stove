@@ -25,13 +25,14 @@ a {
 .swiper-pagination-bullet {
   width: 15px !important;
   height: 15px !important;
-  background: #666 !important ;
+  background: #757575 !important ;
   opacity: 1 !important;
   margin-bottom: 10px !important;
 }
 
 .swiper-pagination-bullet-active {
-  background: blue !important;
+  background: #069e78 !important;
+  padding: 5px;
 }
 
 @media (prefers-color-scheme: dark) {
