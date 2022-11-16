@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const NavbarStyle = styled.div`
+ 
   .logo {
     width: 25%;
     display: flex;
@@ -46,5 +47,7 @@ const NavbarStyle = styled.div`
     }
   }
 `
+
+
 
 export {NavbarStyle}

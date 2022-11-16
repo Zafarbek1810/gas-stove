@@ -15,28 +15,28 @@ const RightNav = ({ open }) => {
           </MyLink>
         </li>
         <li>
-          <MyLink to="/" className={router.pathname == "/news" ? "active" : "link"}>
+          <MyLink to="/" className={router.pathname == "/about" ? "active" : "link"}>
             About Us
           </MyLink>
         </li>
         <li>
-          <MyLink to="/" className={router.pathname == "/news" ? "active" : "link"}>
+          <MyLink to="/" className={router.pathname == "/categories" ? "active" : "link"}>
             Categories
           </MyLink>
         </li>
         <li>
-          <MyLink to="/" className={router.pathname == "/news" ? "active" : "link"}>
+          <MyLink to="/calculation" className={router.pathname == "/calculation" ? "active" : "link"}>
             Calculation
           </MyLink>
         </li>
         <li>
-          <MyLink to="/" className={router.pathname == "/news" ? "active" : "link"}>
+          <MyLink to="/" className={router.pathname == "/contact" ? "active" : "link"}>
             Contact us
           </MyLink>
         </li>
       </ul>
       <MyButton to="/" className="btn">
-        Quick CTA
+        Get in Touch
       </MyButton>
     </RightNavWrapper>
   );
