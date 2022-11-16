@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const NavbarStyle = styled.div`
- 
+  background: #fff;
   .logo {
     width: 25%;
     display: flex;
