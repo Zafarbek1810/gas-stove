@@ -29,7 +29,25 @@ const RightNavWrapper = styled.div`
       text-decoration: none;
       list-style: none;
       position: relative;
-      
+      transition: all 0.5s;
+
+      &:after {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: ".";
+        color: transparent;
+        background: #000;
+        height: 2px;
+        transition: all 0.5s;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
     }
 
     .link {
@@ -42,12 +60,29 @@ const RightNavWrapper = styled.div`
       list-style: none;
       cursor: pointer;
       position: relative;
+      transition: all 0.5s;
 
+      &:after {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: ".";
+        color: transparent;
+        background: #000;
+        height: 1px;
+        transition: all 0.5s;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
     }
-
   }
 
-  .btn{
+  .btn {
     background: #069e78;
     border: none;
     padding: 14px 30px;
@@ -66,7 +101,7 @@ const RightNavWrapper = styled.div`
     flex-flow: column nowrap;
     background-color: #fff;
     position: fixed;
-    transform: ${({open}) => (open ? "translateX(0)" : "translateX(100%)")};
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
     height: 350px;
@@ -115,4 +150,4 @@ const RightNavWrapper = styled.div`
   }
 `;
 
-export {RightNavWrapper};
+export { RightNavWrapper };
