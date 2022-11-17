@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const HomeSecondWrapper=styled.div`
   padding: 50px 0;
+  background: white;
   .card{
     display: flex;
     flex-direction: column;

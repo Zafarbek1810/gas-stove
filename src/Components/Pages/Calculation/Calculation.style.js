@@ -3,6 +3,7 @@ import styled from "styled-components";
 const CalculationWrapper=styled.div`
   position: relative;
   height: 100vh;
+  background: #fff;
 
   .btns {
     position: fixed;
