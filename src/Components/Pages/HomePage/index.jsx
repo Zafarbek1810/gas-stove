@@ -2,14 +2,15 @@ import React from 'react';
 import HomeFirst from "./Sections/HomeFirstSection";
 import HomeSecond from "./Sections/HomeSecondSection";
 import Header from "../Header";
+import {HomePageWrapper} from "./HomePage.style";
 
 const HomePage = () => {
   return (
-    <div>
+    <HomePageWrapper>
       <Header/>
       <HomeFirst/>
       <HomeSecond/>
-    </div>
+    </HomePageWrapper>
   );
 };
 
