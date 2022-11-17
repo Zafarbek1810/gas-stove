@@ -1,43 +1,43 @@
 import React, {useEffect, useRef} from 'react';
 import {Swiper2Wrapper} from "./Swiper2.style";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper";
+import {Navigation} from "swiper";
 import MyButton from "../../../../../../../Common/MyButton";
 
-const Swiper2 = ({setActivePage}) => {
-  const swiperRef=useRef(null)
+const Swiper2 = ({setActivePage, activeSwiperIndex, setActiveSwiperIndex, data}) => {
+  const swiperRef = useRef(null)
 
-  useEffect(()=>{
-    console.log(swiperRef.current.swiper.activeIndex)
-  },[])
+  console.log(activeSwiperIndex)
 
-  const next=()=>{
+  useEffect(() => {
+    swiperRef.current.swiper.slideTo(activeSwiperIndex)
+  }, [activeSwiperIndex])
+
+
+  const next = () => {
     setActivePage(2)
   }
-  const prev=()=>{
+  const prev = () => {
     setActivePage(1)
   }
   return (
     <Swiper2Wrapper>
       <Swiper
+        onActiveIndexChange={(r) => setActiveSwiperIndex(r.activeIndex)}
         ref={swiperRef}
         navigation={true}
         modules={[Navigation]}
         className="mySwiper">
-        <SwiperSlide>
-          <MyButton><img src="images/article.png" alt=""/></MyButton>
-        </SwiperSlide>
-        <SwiperSlide>
-          <MyButton><img src="images/article.png" alt=""/></MyButton>
-        </SwiperSlide>
-        <SwiperSlide>
-          <MyButton><img src="images/article.png" alt=""/></MyButton>
-        </SwiperSlide>
-        <SwiperSlide>
-          <MyButton><img src="images/article.png" alt=""/></MyButton>
-        </SwiperSlide>
+        {data.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className="card-slide">
+              <h4>{item.name}</h4>
+              <img src={item.img} alt=""/>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
 
 

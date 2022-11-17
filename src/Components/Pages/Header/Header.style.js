@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const NavbarStyle = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 1111;
   background: #fff;
   .logo {
     width: 25%;
@@ -15,7 +18,6 @@ const NavbarStyle = styled.div`
       width: 80%;
       font-size: 0.6875rem;
       line-height: 18px;
-      font-family: "Montserrat";
       letter-spacing: 0.5px;
       font-weight: 600;
       margin-right: -50px;

@@ -6,6 +6,10 @@ const Swiper1Wrapper=styled.div`
       width: 100%;
     }
   }
+  
+  .active-card{
+    border: 1px solid #000;
+  }
 `
 
 export{ Swiper1Wrapper }
