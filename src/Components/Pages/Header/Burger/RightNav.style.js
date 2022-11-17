@@ -11,13 +11,16 @@ const RightNavWrapper = styled.div`
   ul {
     display: flex;
     padding-left: 30px;
+    margin-bottom: 0;
   }
 
   li {
     padding: 10px 0 10px 20px;
     width: auto;
+    display: inline-block;
 
     .active {
+      display: block;
       font-style: normal;
       font-weight: 600;
       font-size: 1rem;
@@ -25,6 +28,8 @@ const RightNavWrapper = styled.div`
       color: #000000;
       text-decoration: none;
       list-style: none;
+      position: relative;
+      
     }
 
     .link {
@@ -36,6 +41,7 @@ const RightNavWrapper = styled.div`
       text-decoration: none;
       list-style: none;
       cursor: pointer;
+      position: relative;
 
     }
 

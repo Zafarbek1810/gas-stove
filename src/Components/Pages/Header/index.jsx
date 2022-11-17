@@ -30,8 +30,8 @@ const Navbar = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          paddingBottom: isFixed ? "0" : "10px",
-          paddingTop: isFixed ? "0" : "10px",
+          paddingBottom: isFixed ? "5px" : "15px",
+          paddingTop: isFixed ? "5px" : "15px",
           transition: "padding 0.3s ease"
         }}
       >

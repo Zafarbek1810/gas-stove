@@ -6,11 +6,11 @@ import {HomePageWrapper} from "./HomePage.style";
 
 const HomePage = () => {
   return (
-    <HomePageWrapper>
-      <Header/>
-      <HomeFirst/>
-      <HomeSecond/>
-    </HomePageWrapper>
+      <HomePageWrapper>
+        <Header/>
+        <HomeFirst/>
+        <HomeSecond/>
+      </HomePageWrapper>
   );
 };
 
