@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Swiper1Wrapper=styled.div`
   .card{
+    padding: 5px 10px;
     img{
       width: 100%;
     }
