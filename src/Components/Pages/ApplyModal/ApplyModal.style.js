@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-const ModalWrapper=styled.div`
-
+const ModalWrapper = styled.div`
+  
 `
 
-export {ModalWrapper}
+export{ ModalWrapper }

@@ -3,6 +3,7 @@ import styled from "styled-components";
 const BannerWrappper = styled.div`
   height: 100vh;
 
+
   .swiperWrap {
 
     .swiper-0, .swiper-2 {
@@ -11,6 +12,13 @@ const BannerWrappper = styled.div`
       max-width: 100%;
       background-size: cover;
       position: relative !important;
+      &:after{
+        z-index: 2;
+        position: absolute;
+        inset: 0px;
+        background-color: rgba(0, 0, 0, 0.4);
+        content: "";
+      }
 
     }
 
@@ -20,6 +28,13 @@ const BannerWrappper = styled.div`
       max-width: 100%;
       background-size: cover;
       position: relative !important;
+      &:after{
+        z-index: 2;
+        position: absolute;
+        inset: 0px;
+        background-color: rgba(0, 0, 0, 0.4);
+        content: "";
+      }
 
     }
   }
@@ -55,8 +70,9 @@ const HomeFirstWrapper = styled.div`
 
     .subtitle {
       font-size: 18px;
-      color: #069e78;
-      font-weight: 400;
+      color: #fff;
+      z-index: 3;
+      font-weight: 500;
       margin-bottom: 15px;
       text-transform: uppercase;
     }
@@ -64,15 +80,17 @@ const HomeFirstWrapper = styled.div`
     .title {
       margin: 0 0 24px 0;
       width: 50%;
-      font-size: 60px;
+      font-size: 65px;
       font-weight: 700;
-      color: #000;
+      color: #fff;
+      z-index: 3;
       line-height: 90px;
       text-transform: capitalize;
     }
 
     .btn {
       background: #069e78;
+      z-index: 3;
       border: none;
       padding: 14px 30px;
       font-size: 14px;

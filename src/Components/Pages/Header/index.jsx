@@ -24,7 +24,7 @@ const Navbar = () => {
   }, [])
 
   return (
-    <NavbarStyle>
+    <NavbarStyle style={{boxShadow:" 0px 5px 10px 0px rgba(21, 21, 21, 0.15)"}}>
       <Container
         style={{
           display: "flex",
@@ -32,7 +32,9 @@ const Navbar = () => {
           justifyContent: "space-between",
           paddingBottom: isFixed ? "5px" : "15px",
           paddingTop: isFixed ? "5px" : "15px",
-          transition: "padding 0.3s ease"
+          transition: "padding 0.3s ease",
+
+
         }}
       >
         <MyLink className="logo" to="/">

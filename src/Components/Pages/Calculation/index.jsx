@@ -1,30 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Header from "../Header"
-import CalculationFirst from "./Sections/CalculationFirst";
-import CalculationSecond from "./Sections/CalculationSecond";
-import {CalculationWrapper} from "./Calculation.style";
+import CalcFirstSection from "./Sections/CalcFirstSection";
 
-const Calculation = () => {
-
-  const [activePage, setActivePage] = useState(1)
-
-  const next=()=>{
-    setActivePage(2)
-  }
-  const prev=()=>{
-    setActivePage(1)
-  }
+const Calculation1 = () => {
   return (
-    <CalculationWrapper>
+    <div>
       <Header/>
-      <CalculationFirst activePage={activePage} setActivePage={setActivePage}/>
-      {/*<CalculationSecond/>*/}
-      <div className="btns">
-        <button className="prev" onClick={prev}>PREV</button>
-        <button className="next" onClick={next}>NEXT</button>
-      </div>
-    </CalculationWrapper>
+      <CalcFirstSection/>
+    </div>
   );
 };
 
-export default Calculation;
+export default Calculation1;
