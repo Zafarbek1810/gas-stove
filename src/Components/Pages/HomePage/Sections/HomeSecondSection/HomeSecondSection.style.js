@@ -7,7 +7,9 @@ const HomeSecondWrapper=styled.div`
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+    user-select: none;
     img{
+    height: 200px;
       
     }
     

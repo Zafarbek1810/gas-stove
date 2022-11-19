@@ -11,37 +11,43 @@ import NextSvg from "../../../../Common/Svgs/NextSvg";
 
 const cardData = [
   {
-    img1: "images/card1.webp",
+    img1: "images/card1.jpg",
     subtitle: "Sagaform",
     title: "Buick Iconic Chair Orange In Color",
     price: "$999.00"
   },
   {
-    img1: "images/card1.webp",
+    img1: "images/card2.jpg",
     subtitle: "Sagaform",
     title: "Buick Iconic Chair Orange In Color",
     price: "$999.00"
   },
   {
-    img1: "images/card1.webp",
+    img1: "images/card3.jpg",
     subtitle: "Sagaform",
     title: "Buick Iconic Chair Orange In Color",
     price: "$999.00"
   },
   {
-    img1: "images/card1.webp",
+    img1: "images/card4.jpg",
     subtitle: "Sagaform",
     title: "Buick Iconic Chair Orange In Color",
     price: "$999.00"
   },
   {
-    img1: "images/card1.webp",
+    img1: "images/card5.jpg",
     subtitle: "Sagaform",
     title: "Buick Iconic Chair Orange In Color",
     price: "$999.00"
   },
   {
-    img1: "images/card1.webp",
+    img1: "images/card6.jpg",
+    subtitle: "Sagaform",
+    title: "Buick Iconic Chair Orange In Color",
+    price: "$999.00"
+  },
+  {
+    img1: "images/card7.jpg",
     subtitle: "Sagaform",
     title: "Buick Iconic Chair Orange In Color",
     price: "$999.00"
