@@ -145,7 +145,7 @@ const RightNavWrapper = styled.div`
     }
 
     .btn {
-      display: none;
+      //display: none;
     }
   }
 `;

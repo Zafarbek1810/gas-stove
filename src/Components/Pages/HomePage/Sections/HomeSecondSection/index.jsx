@@ -78,7 +78,25 @@ const HomeSecond = () => {
           spaceBetween={40}
           // navigation={true}
           modules={[Navigation]}
-          className="mySwiper">
+          className="mySwiper"
+          breakpoints={{
+            200: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}>
           {cardData.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="card">

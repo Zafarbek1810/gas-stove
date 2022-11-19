@@ -104,6 +104,34 @@ const HomeFirstWrapper = styled.div`
       align-items: center;
     }
   }
+  
+  @media(max-width: 992px){
+    .text{
+      .subtitle{
+        font-size: 16px;
+      }
+      
+      .title{
+        width: 70%;
+        font-size: 48px;
+        line-height: 60px;
+      }
+    }
+  }
+
+  @media(max-width: 535px){
+    .text{
+      .subtitle{
+        font-size: 12px;
+      }
+
+      .title{
+        width: 70%;
+        font-size: 36px;
+        line-height: 48px;
+      }
+    }
+  }
 
 
 

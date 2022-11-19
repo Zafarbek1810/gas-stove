@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Container from "../src/Components/Common/Container";
 import HomePage from "../src/Components/Pages/HomePage";
 
 export default function Home() {

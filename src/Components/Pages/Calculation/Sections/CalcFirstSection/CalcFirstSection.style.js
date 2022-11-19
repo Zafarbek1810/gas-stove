@@ -53,6 +53,21 @@ const CalcFirstWrapper=styled.div`
       }
     }
   }
+  
+  @media(max-width: 768px){
+    .wrapper{
+      flex-direction: column;
+      
+      .left{
+        border-right: none;
+        width: 100%;
+      }
+      
+      .right{
+        width: 100%;
+      }
+    }
+  }
 `
 
 export{ CalcFirstWrapper }

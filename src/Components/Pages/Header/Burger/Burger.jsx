@@ -15,7 +15,7 @@ const StyledBurger = styled.div`
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
-    transform: translateY(-25px);
+    transform: translateY(-35px);
   }
   @media (max-width: 378px) {
     transform: translateY(-25px);
