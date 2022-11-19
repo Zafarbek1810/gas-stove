@@ -3,7 +3,7 @@ import styled from "styled-components";
 const NavbarStyle = styled.div`
   position: sticky;
   top: 0;
-  z-index: 1111;
+  z-index: 12;
   background: #fff;
   .logo {
     width: 25%;
