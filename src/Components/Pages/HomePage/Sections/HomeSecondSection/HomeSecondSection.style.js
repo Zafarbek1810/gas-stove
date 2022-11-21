@@ -10,6 +10,8 @@ const HomeSecondWrapper=styled.div`
     user-select: none;
     img{
     height: 200px;
+      object-fit: contain;
+      width: 100%;
       
     }
     

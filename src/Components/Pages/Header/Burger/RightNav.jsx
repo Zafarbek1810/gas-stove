@@ -22,12 +22,12 @@ const RightNav = ({open}) => {
             </MyLink>
           </li>
           <li>
-            <MyLink to="/" className={router.pathname == "/about" ? "active" : "link"}>
+            <MyLink to="/about" className={router.pathname == "/about" ? "active" : "link"}>
               About Us
             </MyLink>
           </li>
           <li>
-            <MyLink to="/" className={router.pathname == "/categories" ? "active" : "link"}>
+            <MyLink to="/category" className={router.pathname == "/categories" ? "active" : "link"}>
               Categories
             </MyLink>
           </li>
