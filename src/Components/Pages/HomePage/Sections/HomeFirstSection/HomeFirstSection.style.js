@@ -79,7 +79,7 @@ const HomeFirstWrapper = styled.div`
 
     .title {
       margin: 0 0 24px 0;
-      width: 50%;
+      width: 80%;
       font-size: 65px;
       font-weight: 700;
       color: #fff;
@@ -112,7 +112,7 @@ const HomeFirstWrapper = styled.div`
       }
       
       .title{
-        width: 70%;
+        width: 90%;
         font-size: 48px;
         line-height: 60px;
       }
@@ -126,7 +126,7 @@ const HomeFirstWrapper = styled.div`
       }
 
       .title{
-        width: 70%;
+        width: 80%;
         font-size: 36px;
         line-height: 48px;
       }

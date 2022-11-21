@@ -1,39 +1,42 @@
 import styled from "styled-components";
 
-const HomeSecondWrapper=styled.div`
+const HomeSecondWrapper = styled.div`
   padding: 50px 0;
   background: white;
-  .card{
+
+  .card {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
     user-select: none;
-    img{
-    height: 200px;
+
+    img {
+      height: 200px;
       object-fit: contain;
       width: 100%;
-      
+
     }
-    
-    .subtitle{
+
+    .subtitle {
       color: #757575;
     }
-    
-    .title{
-        margin: 0 0 10px;
-      a{
+
+    .title {
+      margin: 0 0 10px;
+
+      a {
         font-size: 16px;
         text-transform: capitalize;
       }
     }
-    
-    .price{
+
+    .price {
       font-size: 20px;
       font-weight: 700;
       margin-bottom: 15px;
     }
-    
-    button{
+
+    button {
       background: #069e78;
       color: #fff;
       padding: 15px;
@@ -42,18 +45,18 @@ const HomeSecondWrapper=styled.div`
       border: none;
       border-radius: 10px;
       transition: 500ms;
-      
-      &:hover{
+
+      &:hover {
         background: #000;
         cursor: pointer;
       }
     }
   }
-  
-  .btnControl{
+
+  .btnControl {
     text-align: center;
-    
-    button{
+
+    button {
       background: #fff;
       border: none;
       border-radius: 50%;
@@ -65,4 +68,4 @@ const HomeSecondWrapper=styled.div`
   }
 `
 
-export{ HomeSecondWrapper }
+export {HomeSecondWrapper}

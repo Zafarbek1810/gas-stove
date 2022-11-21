@@ -14,23 +14,23 @@ import NextSvg from "../../../../Common/Svgs/NextSvg";
 
 const bannerData = [
   {
-    subtitle: "new beds collection",
-    title: "new beds Collection 2022",
+    subtitle: "YANGI GAZ PLITALAR KOLLEKSIYASI",
+    title: "Artel Gas Plitalari - Siz istagan uslub va narxlarda.",
     background: "images/banner1.jpeg"
   },
   {
-    subtitle: "new beds collection",
-    title: "new beds Collection 2022",
+    subtitle: "YANGI GAZ PLITALAR KOLLEKSIYASI",
+    title: "Artel Gas Plitalari - Siz istagan uslub va narxlarda.",
     background: "images/banner1.jpeg"
   },
   {
-    subtitle: "new beds collection",
-    title: "new beds Collection 2022",
+    subtitle: "YANGI GAZ PLITALAR KOLLEKSIYASI",
+    title: "Artel Gas Plitalari - Siz istagan uslub va narxlarda.",
     background: "images/banner1.jpeg"
   },
   {
-    subtitle: "new beds collection",
-    title: "new beds Collection 2022",
+    subtitle: "YANGI GAZ PLITALAR KOLLEKSIYASI",
+    title: "Artel Gas Plitalari - Siz istagan uslub va narxlarda.",
     background: "images/banner1.jpeg"
   },
 ]
@@ -58,7 +58,7 @@ const HomeFirst = () => {
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{
-              delay: 2500,
+              delay: 5000,
               disableOnInteraction: false,
             }}
             pagination={{
@@ -76,7 +76,7 @@ const HomeFirst = () => {
                     <div className="text">
                       <p className="subtitle">{item.subtitle}</p>
                       <h1 className="title">{item.title}</h1>
-                      <MyButton className="btn">view more <RightArrowSvg/></MyButton>
+                      <MyButton className="btn">Katalogni ko'rish <RightArrowSvg/></MyButton>
                     </div>
                   </Container>
                 </HomeFirstWrapper>
