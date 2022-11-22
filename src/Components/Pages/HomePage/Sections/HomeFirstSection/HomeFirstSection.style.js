@@ -7,34 +7,34 @@ const BannerWrappper = styled.div`
   .swiperWrap {
 
     .swiper-0, .swiper-2 {
-      background: url("/images/banner1.jpeg") no-repeat center center;
+      background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/banner1.jpeg") no-repeat center center;
       height: calc(100vh - 73px);
       max-width: 100%;
       background-size: cover;
       position: relative !important;
-      &:after{
-        z-index: 2;
-        position: absolute;
-        inset: 0px;
-        background-color: rgba(0, 0, 0, 0.4);
-        content: "";
-      }
+      //&:after{
+      //  z-index: 2;
+      //  position: absolute;
+      //  inset: 0px;
+      //  background-color: rgba(0, 0, 0, 0.4);
+      //  content: "";
+      //}
 
     }
 
     .swiper-1, .swiper-3 {
-      background: url("/images/banner2.jpeg") no-repeat center center;
+      background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/banner2.jpeg") no-repeat center center;
       height: calc(100vh - 73px);
       max-width: 100%;
       background-size: cover;
       position: relative !important;
-      &:after{
-        z-index: 2;
-        position: absolute;
-        inset: 0px;
-        background-color: rgba(0, 0, 0, 0.4);
-        content: "";
-      }
+      //&:after{
+      //  z-index: 2;
+      //  position: absolute;
+      //  inset: 0px;
+      //  background-color: rgba(0, 0, 0, 0.4);
+      //  content: "";
+      //}
 
     }
   }

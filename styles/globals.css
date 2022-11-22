@@ -43,8 +43,10 @@ a {
 
 .ant-modal-content {
   background: #069e78 !important;
-  border-radius: 40px;
+  border-radius: 20px !important;
+
 }
+
 
 .ant-modal-close-icon {
   color: #fff !important;

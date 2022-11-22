@@ -37,7 +37,7 @@ const RightNav = ({open}) => {
             </MyLink>
           </li>
           <li>
-            <MyLink to="/" className={router.pathname == "/contact" ? "active" : "link"}>
+            <MyLink to="/contact" className={router.pathname == "/contact" ? "active" : "link"}>
               Contact us
             </MyLink>
           </li>
