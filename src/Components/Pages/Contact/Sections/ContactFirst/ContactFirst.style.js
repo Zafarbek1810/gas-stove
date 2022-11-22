@@ -4,7 +4,7 @@ const ContactFirstWrapper = styled.div`
   padding-top: 50px;
 
   .wrapper {
-    background: rgba(6, 158, 120, 0.67);
+    background: rgba(6, 158, 120);
     padding: 30px 0;
     border-radius: 20px;
 
